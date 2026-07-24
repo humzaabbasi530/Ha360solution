@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===================== META & SEO ===================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ha360solutions – Premium Mobile Apps | WhatsApp Status Saver, PDF Reader &amp; Phone Cleaner</title>
+    <meta name="description" content="Ha360solutions builds high-quality Android apps including WhatsApp Status Saver, PDF Reader, and Phone Cleaner. Download free from the Google Play Store.">
+    <meta name="keywords" content="Ha360solutions, mobile apps, android apps, whatsapp status saver, pdf reader, phone cleaner, google play store, lahore, app development">
+    <meta name="author" content="Ha360solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ha360solutions.com/">
+
+    <!-- ===================== OPEN GRAPH ===================== -->
+    <meta property="og:title" content="Ha360solutions – Premium Mobile Apps">
+    <meta property="og:description" content="We design &amp; develop high-performance Android apps trusted by thousands. Download from Google Play Store.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ha360solutions.com/">
+    <meta property="og:site_name" content="Ha360solutions">
+    <meta property="og:locale" content="en_US">
+
+    <!-- ===================== TWITTER CARD ===================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ha360solutions – Premium Mobile Apps">
+    <meta name="twitter:description" content="High-quality Android apps built with passion. Download from Google Play Store.">
+
+    <!-- ===================== STRUCTURED DATA ===================== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Ha360solutions",
+        "url": "https://ha360solutions.com",
+        "logo": "https://ha360solutions.com/images/logo.png",
+        "description": "Ha360solutions designs and develops high-performance mobile applications for Android.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "E144/16",
+            "addressLocality": "Lahore Cantt",
+            "addressRegion": "Punjab",
+            "addressCountry": "PK"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact@ha360solutions.com",
+            "contactType": "customer support"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "MobileApplication",
+            "name": "WhatsApp Status Saver",
+            "operatingSystem": "Android",
+            "applicationCategory": "UtilitiesApplication",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "author": { "@type": "Organization", "name": "Ha360solutions" }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "MobileApplication",
+            "name": "PDF Reader",
+            "operatingSystem": "Android",
+            "applicationCategory": "BusinessApplication",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "author": { "@type": "Organization", "name": "Ha360solutions" }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "MobileApplication",
+            "name": "Phone Cleaner",
+            "operatingSystem": "Android",
+            "applicationCategory": "UtilitiesApplication",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "author": { "@type": "Organization", "name": "Ha360solutions" }
+        }
+    ]
+    </script>
+
+    <!-- ===================== GOOGLE FONTS ===================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- ===================== STYLESHEET ===================== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================================================
+         PRELOADER
+         ========================================================= -->
+    <div id="preloader" class="preloader" aria-hidden="true">
+        <div class="preloader-ring">
+            <div class="preloader-ring-inner"></div>
+        </div>
+        <span class="preloader-text">Ha<span>360</span></span>
+    </div>
+
+    <!-- =========================================================
+         NAVIGATION
+         ========================================================= -->
+    <header id="navbar" class="navbar" role="banner">
+        <nav class="container nav-wrap" aria-label="Main navigation">
+            <!-- Logo -->
+            <a href="#hero" class="logo" aria-label="Ha360solutions – Home">
+                <span class="logo-mark" aria-hidden="true">H</span>
+                <span class="logo-wordmark">Ha<span class="gold">360</span>solutions</span>
+            </a>
+
+            <!-- Desktop links -->
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#hero" class="nav-link active" role="menuitem" data-nav="hero">Home</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem" data-nav="about">About</a></li>
+                <li role="none"><a href="#apps" class="nav-link" role="menuitem" data-nav="apps">Apps</a></li>
+                <li role="none"><a href="#privacy" class="nav-link" role="menuitem" data-nav="privacy">Privacy Policy</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem" data-nav="contact">Contact</a></li>
+            </ul>
+
+            <!-- Mobile hamburger -->
+            <button id="menuToggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- =========================================================
+             HERO SECTION
+             ========================================================= -->
+        <section id="hero" class="hero">
+            <!-- animated bg -->
+            <div class="hero-bg" aria-hidden="true">
+                <canvas id="heroCanvas"></canvas>
+                <div class="hero-gradient"></div>
+            </div>
+
+            <div class="container hero-inner">
+                <span class="chip animate-in" style="--delay:.15s">
+                    <span class="chip-dot"></span>
+                    Mobile App Development Studio
+                </span>
+
+                <h1 class="hero-heading animate-in" style="--delay:.3s">
+                    Crafting Apps That<br><span class="gold-gradient">Empower Millions.</span>
+                </h1>
+
+                <p class="hero-sub animate-in" style="--delay:.45s">
+                    We are <strong>Ha360solutions</strong> — a Lahore-based team that designs &amp; develops
+                    high-performance Android applications trusted by thousands on the Google Play Store.
+                </p>
+
+                <div class="hero-btns animate-in" style="--delay:.6s">
+                    <a href="#apps" class="btn btn-gold">
+                        Explore Our Apps
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+                </div>
+
+                <!-- counters -->
+                <div class="hero-metrics animate-in" style="--delay:.75s">
+                    <div class="metric">
+                        <strong data-count="3">0</strong>
+                        <span>Apps Published</span>
+                    </div>
+                    <div class="metric-sep" aria-hidden="true"></div>
+                    <div class="metric">
+                        <strong data-count="50" data-suffix="K+">0</strong>
+                        <span>Downloads</span>
+                    </div>
+                    <div class="metric-sep" aria-hidden="true"></div>
+                    <div class="metric">
+                        <strong data-count="4.5" data-decimal>0</strong>
+                        <span>Avg Rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- scroll cue -->
+            <a href="#about" class="scroll-cue" aria-label="Scroll down">
+                <span class="scroll-cue-bar"></span>
+            </a>
+        </section>
+
+        <!-- =========================================================
+             ABOUT US
+             ========================================================= -->
+        <section id="about" class="section about" aria-labelledby="about-title">
+            <div class="container">
+                <header class="sec-head">
+                    <span class="sec-tag">Who We Are</span>
+                    <h2 id="about-title" class="sec-title">About <span class="gold">Ha360solutions</span></h2>
+                    <p class="sec-sub">A passionate team of developers committed to building apps that solve everyday problems with elegance &amp; speed.</p>
+                </header>
+
+                <!-- value cards -->
+                <div class="card-grid cols-4 reveal-group">
+                    <!-- Mission -->
+                    <article class="glass-card reveal-item">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="24" cy="24" r="3" fill="currentColor"/></svg>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>Create intuitive, high-performance mobile apps that simplify everyday tasks and delight users worldwide.</p>
+                    </article>
+                    <!-- Vision -->
+                    <article class="glass-card reveal-item">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 48 48"><path d="M24 6l5 12h12l-10 8 4 12-11-8-11 8 4-12L7 18h12z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>Become a globally recognized mobile studio known for innovation, quality, and user-centric design.</p>
+                    </article>
+                    <!-- Values -->
+                    <article class="glass-card reveal-item">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 48 48"><path d="M24 42S8 31 8 20a8 8 0 0116 0 8 8 0 0116 0c0 11-16 22-16 22z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        </div>
+                        <h3>Our Values</h3>
+                        <p>Quality code, clean design, user privacy, and relentless optimisation in every release we ship.</p>
+                    </article>
+                    <!-- Expertise -->
+                    <article class="glass-card reveal-item">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 48 48"><rect x="8" y="14" width="32" height="22" rx="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M18 22l-4 4 4 4M30 22l4 4-4 4M26 20l-4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                        <h3>Our Expertise</h3>
+                        <p>Deep Android expertise in utility apps, file management, media tools &amp; system optimisation.</p>
+                    </article>
+                </div>
+
+                <!-- why us banner -->
+                <div class="highlight-box reveal-item">
+                    <div class="highlight-glow" aria-hidden="true"></div>
+                    <div class="highlight-body">
+                        <h3>Why Choose Us?</h3>
+                        <p>Based in <strong>Lahore, Pakistan</strong>, we combine local talent with global standards. Our apps are lightweight, ad-respectful, and built with the latest Android technologies.</p>
+                        <ul class="check-list">
+                            <li>Lightweight &amp; blazing-fast performance</li>
+                            <li>User privacy-first approach</li>
+                            <li>Regular updates &amp; rapid bug fixes</li>
+                            <li>Google Play Store policy compliant</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             OUR APPS
+             ========================================================= -->
+        <section id="apps" class="section apps" aria-labelledby="apps-title">
+            <div class="container">
+                <header class="sec-head">
+                    <span class="sec-tag">Our Products</span>
+                    <h2 id="apps-title" class="sec-title">Our <span class="gold">Apps</span></h2>
+                    <p class="sec-sub">Powerful Android applications designed to make your mobile experience better — all free on Google Play.</p>
+                </header>
+
+                <div class="card-grid cols-3 reveal-group">
+
+                    <!-- WhatsApp Status Saver -->
+                    <article class="app-card reveal-item" id="app-status-saver">
+                        <div class="app-img">
+                            <img src="images/whatsapp-status-saver.png"
+                                 alt="WhatsApp Status Saver – save statuses with one tap"
+                                 loading="lazy" width="600" height="600">
+                            <span class="app-tag">Utility</span>
+                        </div>
+                        <div class="app-body">
+                            <h3>WhatsApp Status Saver</h3>
+                            <p>Save &amp; download WhatsApp statuses — photos and videos — with a single tap. Fast, private, and incredibly easy to use.</p>
+                            <ul class="app-feat">
+                                <li>One-tap save for photos &amp; videos</li>
+                                <li>Built-in media viewer</li>
+                                <li>No login required</li>
+                                <li>Lightweight &amp; lightning fast</li>
+                            </ul>
+                            <div class="app-foot">
+                                <div class="stars-row" aria-label="4.5 out of 5 stars">
+                                    <span class="stars" aria-hidden="true">★★★★<span class="half">★</span></span>
+                                    <span class="rating-num">4.5</span>
+                                </div>
+                                <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" class="btn btn-sm" aria-label="Get WhatsApp Status Saver on Google Play">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5c0-.59.34-1.11.84-1.35L13.69 12 3.84 21.85A1.5 1.5 0 013 20.5zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.69.59 1.19s-.25.92-.59 1.19l-2.27 1.31-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                                    Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PDF Reader -->
+                    <article class="app-card reveal-item" id="app-pdf-reader">
+                        <div class="app-img">
+                            <img src="images/pdf-reader.png"
+                                 alt="PDF Reader – open and annotate documents instantly"
+                                 loading="lazy" width="600" height="600">
+                            <span class="app-tag">Productivity</span>
+                        </div>
+                        <div class="app-body">
+                            <h3>PDF Reader</h3>
+                            <p>A powerful yet lightweight PDF viewer that opens documents instantly. Annotate, bookmark, search and share your PDFs effortlessly.</p>
+                            <ul class="app-feat">
+                                <li>Instant PDF rendering</li>
+                                <li>Night mode &amp; reading options</li>
+                                <li>Bookmark &amp; highlight text</li>
+                                <li>Share &amp; print support</li>
+                            </ul>
+                            <div class="app-foot">
+                                <div class="stars-row" aria-label="4.6 out of 5 stars">
+                                    <span class="stars" aria-hidden="true">★★★★<span class="half">★</span></span>
+                                    <span class="rating-num">4.6</span>
+                                </div>
+                                <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" class="btn btn-sm" aria-label="Get PDF Reader on Google Play">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5c0-.59.34-1.11.84-1.35L13.69 12 3.84 21.85A1.5 1.5 0 013 20.5zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.69.59 1.19s-.25.92-.59 1.19l-2.27 1.31-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                                    Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Phone Cleaner -->
+                    <article class="app-card reveal-item" id="app-phone-cleaner">
+                        <div class="app-img">
+                            <img src="images/phone-cleaner.png"
+                                 alt="Phone Cleaner – optimise storage and boost speed"
+                                 loading="lazy" width="600" height="600">
+                            <span class="app-tag">System Tool</span>
+                        </div>
+                        <div class="app-body">
+                            <h3>Phone Cleaner</h3>
+                            <p>Boost your phone's speed by cleaning junk files, cache &amp; residual data. Free up storage and optimise performance in seconds.</p>
+                            <ul class="app-feat">
+                                <li>Smart junk-file detection</li>
+                                <li>Cache &amp; residual cleaner</li>
+                                <li>Storage analyser dashboard</li>
+                                <li>Battery optimisation tips</li>
+                            </ul>
+                            <div class="app-foot">
+                                <div class="stars-row" aria-label="4.4 out of 5 stars">
+                                    <span class="stars" aria-hidden="true">★★★★<span class="half">★</span></span>
+                                    <span class="rating-num">4.4</span>
+                                </div>
+                                <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" class="btn btn-sm" aria-label="Get Phone Cleaner on Google Play">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5c0-.59.34-1.11.84-1.35L13.69 12 3.84 21.85A1.5 1.5 0 013 20.5zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.69.59 1.19s-.25.92-.59 1.19l-2.27 1.31-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                                    Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             PRIVACY POLICY
+             ========================================================= -->
+        <section id="privacy" class="section privacy" aria-labelledby="privacy-title">
+            <div class="container">
+                <header class="sec-head">
+                    <span class="sec-tag">Legal</span>
+                    <h2 id="privacy-title" class="sec-title">Privacy <span class="gold">Policy</span></h2>
+                    <p class="sec-sub">Your privacy matters. This policy explains how our Google Play Store applications handle your data.</p>
+                </header>
+
+                <div class="privacy-wrap">
+                    <p class="privacy-date"><strong>Effective Date:</strong> July 24, 2026 &nbsp;·&nbsp; <strong>Last Updated:</strong> July 24, 2026</p>
+
+                    <div class="privacy-intro glass-card">
+                        <p>Ha360solutions (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) operates mobile applications published on the Google Play Store, including <strong>WhatsApp Status Saver</strong>, <strong>PDF Reader</strong>, and <strong>Phone Cleaner</strong> (collectively, &ldquo;our Apps&rdquo;). This Privacy Policy describes how we collect, use, and protect your information when you use our Apps.</p>
+                        <p>By downloading and using any of our Apps you agree to the terms outlined below. If you do not agree, please discontinue use.</p>
+                    </div>
+
+                    <!-- Accordion -->
+                    <div class="accordion" id="privacyAccordion">
+
+                        <div class="acc-item">
+                            <button class="acc-trigger" aria-expanded="false" aria-controls="acc-panel-1"><span class="acc-num">01</span><span class="acc-label">Information We Collect</span><span class="acc-arrow" aria-hidden="true"></span></button>
+                            <div class="acc-panel" id="acc-panel-1" role="region" hidden>
+                                <div class="acc-content">
+                                    <p>Our Apps are built with a <strong>privacy-first</strong> approach. We minimise data collection to only what is necessary:</p>
+                                    <h4>Collected Automatically</h4>
+                                    <ul>
+                                        <li><strong>Device Information:</strong> Device model, OS version, and unique identifiers for crash reporting &amp; analytics.</li>
+                                        <li><strong>Usage Data:</strong> Anonymous statistics (features used, session duration, error logs) to improve performance.</li>
+                                        <li><strong>Advertising ID:</strong> Google Advertising ID may be collected to serve personalised or non-personalised ads.</li>
+                                    </ul>
+                                    <h4>NOT Collected</h4>
+                                    <ul>
+                                        <li>We do <strong>NOT</strong> collect personal data such as your name, email, phone number, or location.</li>
+                                        <li>We do <strong>NOT</strong> access, store, or transmit your WhatsApp messages, contacts, or private media to our servers.</li>
+                                        <li>We do <strong>NOT</strong> collect the content of PDF documents you view.</li>
+                                        <li>We do <strong>NOT</strong> collect personal files during cleaning operations.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <button class="acc-trigger" aria-expanded="false" aria-controls="acc-panel-2"><span class="acc-num">02</span><span class="acc-label">How We Use Your Information</span><span class="acc-arrow" aria-hidden="true"></span></button>
+                            <div class="acc-panel" id="acc-panel-2" role="region" hidden>
+                                <div class="acc-content">
+                                    <ul>
+                                        <li><strong>App Functionality:</strong> Ensuring our Apps work correctly on your device.</li>
+                                        <li><strong>Performance Improvement:</strong> Analysing crash reports, identifying bugs, and optimising performance.</li>
+                                        <li><strong>Advertising:</strong> Displaying ads via third-party networks (e.g., Google AdMob) to support free app development.</li>
+                                        <li><strong>Compliance:</strong> Meeting legal obligations and protecting our rights.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <button class="acc-trigger" aria-expanded="false" aria-controls="acc-panel-3"><span class="acc-num">03</span><span class="acc-label">Third-Party Services</span><span class="acc-arrow" aria-hidden="true"></span></button>
+                            <div class="acc-panel" id="acc-panel-3" role="region" hidden>
+                                <div class="acc-content">
+                                    <p>Our Apps may use the following third-party services, each governed by its own privacy policy:</p>
+                                    <ul>
+                                        <li><strong>Google Play Services</strong> – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                                        <li><strong>Google AdMob</strong> – <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Privacy Info</a></li>
+                                        <li><strong>Firebase Analytics</strong> – <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacy</a></li>
+                                        <li><strong>Firebase Crashlytics</strong> – <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <button class="acc-trigger" aria-expanded="false" aria-controls="acc-panel-4"><span class="acc-num">04</span><span class="acc-label">App-Specific Permissions</span><span class="acc-arrow" aria-hidden="true"></span></button>
+                            <div class="acc-panel" id="acc-panel-4" role="region" hidden>
+                                <div class="acc-content">
+                                    <h4>WhatsApp Status Saver</h4>
+                                    <ul><li><strong>Storage:</strong> Access &amp; save WhatsApp status media locally. No media is uploaded to any server.</li></ul>
+                                    <h4>PDF Reader</h4>
+                                    <ul><li><strong>Storage:</strong> Open, read &amp; manage PDF files on your device. Contents never leave the device.</li></ul>
+                                    <h4>Phone Cleaner</h4>
+                                    <ul>
+                                        <li><strong>Storage:</strong> Scan &amp; remove junk files, cache &amp; temporary data.</li>
+                                        <li><strong>Usage Access (optional):</strong> For accurate app-level storage analysis — used locally only.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <button class="acc-trigger" aria-expanded="false" aria-controls="acc-panel-5"><span class="acc-num">05</span><span class="acc-label">Data Security</span><span class="acc-arrow" aria-hidden="true"></span></button>
+                            <div class="acc-panel" id="acc-panel-5" role="region" hidden>
+                                <div class="acc-content">
+                                    <ul>
+                                        <li>All operations are performed <strong>locally on your device</strong>.</li>
+                                        <li>We do not operate external servers that store your personal data.</li>
+                                        <li>Third-party SDKs follow industry-standard security practices.</li>
+                                        <li>We regularly update our Apps to patch vulnerabilities.</li>
+                                    </ul>
+                                    <p>No method of electronic storage is 100 % secure; we cannot guarantee absolute security.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <button class="acc-trigger" aria-expanded="false" aria-controls="acc-panel-6"><span class="acc-num">06</span><span class="acc-label">Children&rsquo;s Privacy</span><span class="acc-arrow" aria-hidden="true"></span></button>
+                            <div class="acc-panel" id="acc-panel-6" role="region" hidden>
+                                <div class="acc-content">
+                                    <p>Our Apps are not directed at children under 13. We do not knowingly collect information from children. If you believe a child has provided us data, please contact us and we will promptly delete it.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <button class="acc-trigger" aria-expanded="false" aria-controls="acc-panel-7"><span class="acc-num">07</span><span class="acc-label">Data Retention &amp; Deletion</span><span class="acc-arrow" aria-hidden="true"></span></button>
+                            <div class="acc-panel" id="acc-panel-7" role="region" hidden>
+                                <div class="acc-content">
+                                    <ul>
+                                        <li><strong>Local Data:</strong> Delete by clearing app data or uninstalling.</li>
+                                        <li><strong>Analytics:</strong> Retained by Firebase per their retention policies.</li>
+                                        <li><strong>Ad Data:</strong> Reset your Advertising ID or opt out via device settings.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <button class="acc-trigger" aria-expanded="false" aria-controls="acc-panel-8"><span class="acc-num">08</span><span class="acc-label">Your Rights</span><span class="acc-arrow" aria-hidden="true"></span></button>
+                            <div class="acc-panel" id="acc-panel-8" role="region" hidden>
+                                <div class="acc-content">
+                                    <ul>
+                                        <li><strong>Access:</strong> Request what data, if any, we hold.</li>
+                                        <li><strong>Deletion:</strong> Request deletion of any associated data.</li>
+                                        <li><strong>Opt-out:</strong> Adjust personalised ads in device settings.</li>
+                                        <li><strong>Revoke Permissions:</strong> Via Settings → Apps at any time.</li>
+                                    </ul>
+                                    <p>Contact us at <a href="mailto:contact@ha360solutions.com">contact@ha360solutions.com</a> to exercise these rights.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <button class="acc-trigger" aria-expanded="false" aria-controls="acc-panel-9"><span class="acc-num">09</span><span class="acc-label">Changes to This Policy</span><span class="acc-arrow" aria-hidden="true"></span></button>
+                            <div class="acc-panel" id="acc-panel-9" role="region" hidden>
+                                <div class="acc-content">
+                                    <p>We may update this policy periodically. Changes are indicated by revising the &ldquo;Last Updated&rdquo; date. Significant changes will be communicated through an in-app notice. Continued use after changes constitutes acceptance.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <button class="acc-trigger" aria-expanded="false" aria-controls="acc-panel-10"><span class="acc-num">10</span><span class="acc-label">Contact Us Regarding Privacy</span><span class="acc-arrow" aria-hidden="true"></span></button>
+                            <div class="acc-panel" id="acc-panel-10" role="region" hidden>
+                                <div class="acc-content">
+                                    <ul>
+                                        <li><strong>Company:</strong> Ha360solutions</li>
+                                        <li><strong>Email:</strong> <a href="mailto:contact@ha360solutions.com">contact@ha360solutions.com</a></li>
+                                        <li><strong>Address:</strong> E144/16, Lahore Cantt, Punjab, Pakistan</li>
+                                        <li><strong>Website:</strong> <a href="https://ha360solutions.com" target="_blank" rel="noopener noreferrer">ha360solutions.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /accordion -->
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             CONTACT
+             ========================================================= -->
+        <section id="contact" class="section contact" aria-labelledby="contact-title">
+            <div class="container">
+                <header class="sec-head">
+                    <span class="sec-tag">Get In Touch</span>
+                    <h2 id="contact-title" class="sec-title">Contact <span class="gold">Us</span></h2>
+                    <p class="sec-sub">Have a question, feedback, or partnership idea? We'd love to hear from you.</p>
+                </header>
+
+                <div class="contact-grid">
+                    <!-- info column -->
+                    <div class="contact-info reveal-group">
+                        <div class="info-card reveal-item">
+                            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                            <div><h3>Our Office</h3><p>E144/16, Lahore Cantt<br>Punjab, Pakistan</p></div>
+                        </div>
+                        <div class="info-card reveal-item">
+                            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg></div>
+                            <div><h3>Email Us</h3><p><a href="mailto:contact@ha360solutions.com">contact@ha360solutions.com</a></p></div>
+                        </div>
+                        <div class="info-card reveal-item">
+                            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z"/></svg></div>
+                            <div><h3>Website</h3><p><a href="https://ha360solutions.com" target="_blank" rel="noopener noreferrer">ha360solutions.com</a></p></div>
+                        </div>
+                        <div class="info-card reveal-item">
+                            <div class="info-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5c0-.59.34-1.11.84-1.35L13.69 12 3.84 21.85A1.5 1.5 0 013 20.5zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.69.59 1.19s-.25.92-.59 1.19l-2.27 1.31-2.5-2.5 2.5-2.5 2.27 1.31zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg></div>
+                            <div><h3>Google Play</h3><p><a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">View Our Apps</a></p></div>
+                        </div>
+                    </div>
+
+                    <!-- form column -->
+                    <form class="contact-form glass-card reveal-item" id="contactForm" novalidate>
+                        <div class="field">
+                            <label for="fname">Full Name</label>
+                            <input type="text" id="fname" name="name" placeholder="John Doe" required autocomplete="name">
+                        </div>
+                        <div class="field">
+                            <label for="femail">Email Address</label>
+                            <input type="email" id="femail" name="email" placeholder="you@example.com" required autocomplete="email">
+                        </div>
+                        <div class="field">
+                            <label for="fsubject">Subject</label>
+                            <input type="text" id="fsubject" name="subject" placeholder="How can we help?">
+                        </div>
+                        <div class="field">
+                            <label for="fmessage">Message</label>
+                            <textarea id="fmessage" name="message" rows="5" placeholder="Write your message…" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-block" id="formSubmit">
+                            Send Message
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg>
+                        </button>
+                        <div class="form-msg" id="formMsg" role="alert" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========================================================
+         FOOTER
+         ========================================================= -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="logo" aria-label="Ha360solutions Home">
+                        <span class="logo-mark" aria-hidden="true">H</span>
+                        <span class="logo-wordmark">Ha<span class="gold">360</span>solutions</span>
+                    </a>
+                    <p>Building innovative mobile solutions that simplify everyday tasks. Trusted by thousands on the Google Play Store.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#apps">Our Apps</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Apps</h4>
+                    <ul>
+                        <li><a href="#app-status-saver">WhatsApp Status Saver</a></li>
+                        <li><a href="#app-pdf-reader">PDF Reader</a></li>
+                        <li><a href="#app-phone-cleaner">Phone Cleaner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>E144/16, Lahore Cantt</li>
+                        <li><a href="mailto:contact@ha360solutions.com">contact@ha360solutions.com</a></li>
+                        <li><a href="https://ha360solutions.com" target="_blank" rel="noopener noreferrer">ha360solutions.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ha360solutions. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back-to-top -->
+    <button id="topBtn" class="top-btn" aria-label="Back to top">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
